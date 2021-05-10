@@ -148,9 +148,11 @@ ul.navbar-nav > li > div.dropdown > button.btn.btn-default {
   -ms-transition: top 0.25s ease,opacity 0.25s ease;
   transition: top 0.25s ease,opacity 0.25s ease;
 }
+/*
 section {
   padding: 75px 0;
 }
+*/
 section h2 {
   margin: 0;
   font-size: 3em;
@@ -552,16 +554,20 @@ body.pf-single .pf-link {
       color: #fff;
     }
     
-  section,
+  /*section,*/
   #home-portfolio,
   .client-list {
     padding: 75px 0;
   }
-  
+
     section.first {
     padding-top: 75px;
   }
-    
+
+  body.pf-single section.first {
+    padding-top: 0;
+  }
+   
     /* Home Page */
     .home-intro {
         margin-top: 50px;
@@ -665,6 +671,10 @@ body.pf-single .pf-link {
 }
 
 @media screen and (min-width: 769px) {
+  section {
+    padding: 75px 0;
+  }
+
   .navbar-custom {
     padding: 25px 0;
     -webkit-transition: padding 0.25s;
