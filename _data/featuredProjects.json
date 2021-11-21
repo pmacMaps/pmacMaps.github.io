@@ -9,7 +9,7 @@
     {
         "title": "McKinney Party of 5 Website",
         "url": "/portfolio/product/mckinneypartyof5",
-        "teaser": "I designed and built a family blogging website using a Jamstack approach.  The site is built using Jekyll, delivered through CloudFlare, and utilizes the Bootstrap framework.",
+        "teaser": "I designed and built a family blogging website using a Jamstack approach.  The site was built using Jekyll, delivered through CloudFlare, and utilizes the Bootstrap framework.",
         "image": "mckinney-party-of-5-screenshot.PNG",
         "image-alt": "screen shot of the website www.mckinneypartyof5.life"
     },
