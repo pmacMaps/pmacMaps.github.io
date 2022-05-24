@@ -1,0 +1,46 @@
+---
+permalink: /labs/weather-forecast
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 10 - Fetching Data</title>
+    <!-- Stylesheets -->
+    <!-- Normalize -->
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <!-- Additional Rules -->
+    <style>
+        h1 {
+            margin: 0;
+        }
+        button {
+            margin: 15px 0;
+        }
+        #errorData {
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Get Weather Forcecast</h1>
+        <p>This simple app gets the weather forecast for your location from the National Weather Service.</p>
+        <p>Click on the button to get your forecast!</p>
+        <button id="getForecast">Get Weather Forecast</button>
+        <hr>
+    </section>
+    <section>
+        <h2>Weather Forecast</h2>
+        <div id="forecaseData"></div>
+    </section>
+    <section>
+        <div id="errorData"></div>
+    </section>
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
