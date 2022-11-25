@@ -1,6 +1,6 @@
 [
     {
-        "title": "Subdivision &#38; Land Development Plans Review App",
+        "title": "Subdivision &#38; Land Development Plans Review",
         "image": "date-picker-map-screenshot.png",
         "image-alt": "screen shot of a web map app",
         "url": "/portfolio/product/saldo-review-map",
@@ -14,10 +14,10 @@
         "teaser": "An Esri Classic Story Map Tour app that has been enhanced using custom JavaScript.  Enhancements include a toggable map legend and adding alt text attributes to all images."
     },
     {
-        "title": "Imagery Comparison Map",
-        "image": "imagery-compare-screenshot.PNG",
-        "image-alt": "screen shot of a web map application",
-        "url": "/portfolio/product/imagery-compare-map",
-        "teaser": "Using the Esri JavaScript API's Swipe Widget, users can compare two years of orthoimagery."
+        "title": "Find Nearby Pennsylvania Parks",
+        "image": "find-pa-parks-screenshot.PNG",
+        "image-alt": "screen shot of a web map app",
+        "url": "/portfolio/product/find-pa-parks",
+        "teaser": "An app that locates Pennsylvania local parks near the user's current location.  Built with Leaflet.js, ArcGIS Rest JS, Parcel.js, and the Geolocation API."
     }
 ]
