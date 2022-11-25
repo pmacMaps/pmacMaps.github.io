@@ -8,9 +8,9 @@
     },
     {
         "title": "Local Weather Forecast",
-        "image": "",
-        "image-alt": "",
+        "image": "get-forecast-screenshot.PNG",
+        "image-alt": "screen shot of website that displays local weather forecast",
         "url": "/portfolio/product/local-weather",
-        "teaser": "Page gets user's location using the Geolocation API.  It then retrieves the weather forecast from the National Weather Service."
+        "teaser": "A website that displays the weather forecast based on the user's current location.  Forecast data is requested from the National Weather Service API."
     }
 ]

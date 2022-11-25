@@ -19,7 +19,6 @@ permalink: /labs/local-weather
         -moz-box-sizing: border-box;
         box-sizing: border-box;
     }
-
     *, *:before, *:after {
         -webkit-box-sizing: inherit;
         -moz-box-sizing: inherit;
@@ -33,6 +32,10 @@ permalink: /labs/local-weather
         height: 100%;
         width: 100%;
     }
+    body {
+        font-size: 1.15em;
+        padding-top: 25px;
+    }
     #main {
         max-width: 1040px;
         margin: 0 auto;
@@ -40,16 +43,38 @@ permalink: /labs/local-weather
     }
     h1 {
         text-align: center;
+        margin-bottom: 25px;
+        font-size: 1.75em;
     }
-
     button,
     h2 {
-    margin: 20px 0;
+        margin: 20px 0;
     }
-
+    h2 {
+        font-size: 1.5em;
+    }
+    button {
+        display: inline-block;
+        border-radius: 5px;
+        color: #fff;
+        background-color: #000;
+        padding: 5px;
+        font-size: 1.2em;
+    }
+    button:hover,
+    button:focus {
+        cursor: pointer;
+        text-decoration: underline;
+    }
     #errorData {
     font-weight: bold;
     color: red;
+    }
+    .forecast-text {
+        margin: 15px;
+    }
+    .forecast-text:last-child {
+       padding-bottom: 45px;
     }
   </style>
 </head>
@@ -59,7 +84,7 @@ permalink: /labs/local-weather
             <h1>Get Weather Forcecast</h1>
             <p>This simple app gets the weather forecast for your location from the National Weather Service.</p>
             <p>Click on the button to get your forecast!</p>
-            <button id="getForecast">Get Weather Forecast</button>
+            <button id="getForecast">Get Forecast</button>
             <hr>
         </section>
         <section>
@@ -117,6 +142,8 @@ permalink: /labs/local-weather
             for (const forecast of data.properties.periods) {
                 // create a paragraph element
                 const pEl = document.createElement("p");
+                // add css class to element
+                pEl.classList.add('forecast-text');
                 // set content of paragraph to forecast data
                 pEl.innerHTML = `${forecast.name} : ${forecast.detailedForecast}`;
                 // append paragraph element to div
