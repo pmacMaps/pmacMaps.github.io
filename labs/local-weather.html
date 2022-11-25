@@ -1,0 +1,172 @@
+---
+permalink: /labs/local-weather
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Get Local Weather Forecast</title>
+  <meta name="description" content="Get your weather forecast from the National Weather Service.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <style>
+    html {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    *, *:before, *:after {
+        -webkit-box-sizing: inherit;
+        -moz-box-sizing: inherit;
+        box-sizing: inherit;
+        margin: 0;
+        padding: 0;
+    }
+    html,
+    body,
+    #main {
+        height: 100%;
+        width: 100%;
+    }
+    #main {
+        max-width: 1040px;
+        margin: 0 auto;
+        line-height: 1.5em;
+    }
+    h1 {
+        text-align: center;
+    }
+
+    button,
+    h2 {
+    margin: 20px 0;
+    }
+
+    #errorData {
+    font-weight: bold;
+    color: red;
+    }
+  </style>
+</head>
+<body>
+    <div id="main">
+        <section>
+            <h1>Get Weather Forcecast</h1>
+            <p>This simple app gets the weather forecast for your location from the National Weather Service.</p>
+            <p>Click on the button to get your forecast!</p>
+            <button id="getForecast">Get Weather Forecast</button>
+            <hr>
+        </section>
+        <section>
+            <h2>Weather Forecast</h2>
+            <div id="forecastData"></div>
+        </section>
+        <section>
+            <div id="errorData"></div>
+        </section>
+    </div>
+    <script>
+        // function to get user's current location
+        const getCurrentPosition = (options) => {
+        return new Promise(function (resolve, reject) {
+            navigator.geolocation.getCurrentPosition(resolve, reject, options);
+        });
+        };
+
+        // function to get weather forecast grid from user's location
+        const getUserWeatherGrid = (lat, long) => {
+        const url = `https://api.weather.gov/points/${lat},${long}`;
+        fetch(url)
+            .then((response) => response.json())
+            .then((data) => {
+            // display data returned from server
+            console.log(data);
+            // get weather forecast
+            // passing in url that returns forecast data
+            getWeatherForcast(data.properties.forecast);
+            })
+            .catch((err) => {
+            // handle errors with requesting forecast location
+            // print error to console
+            console.error(err.message);
+            // display error to user
+            writeError("Error getting forecast location", err.message);
+            });
+        };
+
+        // function gets weather forecast for user
+        const getWeatherForcast = (url) => {
+        fetch(url)
+            .then((response) => response.json())
+            .then((data) => {
+            // display data returned
+            console.log(data);
+            // display first item of forecast data
+            console.log(
+                `${data.properties.periods[0].name} : ${data.properties.periods[0].detailedForecast}`
+            );
+            // element to write forecast data to
+            const contentEl = document.getElementById("forecastData");
+            // loop over forecast data and write content to paragraph element
+            // append paragraph element to div to display information to user
+            for (const forecast of data.properties.periods) {
+                // create a paragraph element
+                const pEl = document.createElement("p");
+                // set content of paragraph to forecast data
+                pEl.innerHTML = `${forecast.name} : ${forecast.detailedForecast}`;
+                // append paragraph element to div
+                contentEl.appendChild(pEl);
+            }
+            })
+            .catch((err) => {
+            // handle error with requesting weather forecast info
+            // print error to console
+            console.error(err.message);
+            // display error to user
+            writeError("Error getting weather forcast", err.message);
+            });
+        };
+
+        // function to write request errors information to webpage
+        const writeError = (message, data) => {
+        // DOM element to write weather forecast data to
+        const dataEl = document.getElementById("errorData");
+        // set content of element with error message
+        dataEl.innerHTML = `${message} : ${data}`;
+        };
+
+        // function 1) gets user's location; 2) gets weather forecast for user's location; 3) display forecast on webpage
+        const requestWeatherForecast = () => {
+        // get user's location
+        getCurrentPosition()
+            .then((position) => {
+            // print data to console
+            console.log(position);
+            // set user's latitude and longitude
+            let lat = position.coords.latitude;
+            let long = position.coords.longitude;
+            // get user's weather forecast grid from latitude and longitude
+            // function to get forecast called within this function
+            getUserWeatherGrid(lat, long);
+            })
+            .catch((err) => {
+            // handle error with request to get user's location
+            // print error message to console
+            console.error(err.message);
+            // display error to user
+            writeError("Error getting your location", err.message);
+            });
+        };
+
+        // get DOM element reference to button user clicks to request forecast
+        const btnEl = document.getElementById('getForecast');
+        // get weather forecast when clicking button
+        btnEl.addEventListener('click', requestWeatherForecast);
+    </script>
+</body>
+</html>
