@@ -4,7 +4,7 @@
         "image": "date-picker-map-screenshot.png",
         "image-alt": "screen shot of a web map app",
         "url": "/portfolio/product/saldo-review-map",
-        "teaser": "An interactive web map that allows querying subdivision/land development plans reviewed by the Cumberland County Planning office.  Built with Leaflet.js, Esri web services, and Bootstrap."
+        "teaser": "Custom developed web map that allows querying subdivision/land development plans by date."
     },
     {
         "title": "Yellow Breeches Water Trail Story Map",

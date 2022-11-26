@@ -283,21 +283,16 @@ body.portfolio footer hr {
     background-size: cover;
 }
 
-.feat-posts div.card-body img {
+.feat-posts div.card-body img,
+.feat-portfolio div.card-body img {
   margin-bottom: 15px;
   width: 258px;
-  height: 120px;
+  height: 125px;
 }
 
 .feat-posts div.card-body h3,
 .feat-portfolio div.card-body h3 {
   min-height: 100px;
-}
-
-.feat-portfolio div.card-body img {
-  max-height: 150px;
-  min-height: 150px;
-  overflow-y: hidden;
 }
 
 .feat-portfolio div.card-body p {

@@ -1,23 +1,23 @@
 [
     {
+        "title": "South Middleton Township Official Map",
+        "url": "/portfolio/product/south-middleton-official-map",
+         "teaser": "An update and redesign of the existing map.  Visual hierarchy of layers and labels were enhanced.",
+        "image": "sm-officialmap-snippet.PNG",
+        "image-alt": "screen shot of the South Middleton Township official map"
+    },
+    {
         "title": "Subdivision &#38; Land Development Plans Review App",
         "url": "/portfolio/product/saldo-review-map",
-        "teaser": "An interactive web map that allows querying subdivision/land development plans reviewed by the Cumberland County Planning office.  Built with Leaflet.js, Esri web services, and Bootstrap.",
+        "teaser": "Custom developed web map that allows querying subdivision/land development plans by date.",
         "image": "date-picker-map-screenshot.png",
         "image-alt": "screen shot of a web map app"
     },
     {
-        "title": "SARA Report Tool",
-        "image": "dirty-industry-stack-factory-github.jpg",
-        "image-alt": "factory with smokestacks",
-        "url": "/portfolio/product/sara-report-tool",
-        "teaser": "The SARA Report Tool is a custom ArcGIS tool developed to assist Cumberland County Public Safety with the reporting for hazardous chemical facilties."
-    },
-    {
-        "title": "South Middleton Township Official Map",
-        "url": "/portfolio/product/south-middleton-official-map",
-         "teaser": "This update to the existing Official Map included designing a visual hierarchy among thematic and reference layers, and developing a balanced system of labels for features.",
-        "image": "sm-officialmap-snippet.PNG",
-        "image-alt": "screen shot of the South Middleton Township official map"
+        "title": "ArcGIS Online Python Scripts",
+        "image": "ago-admin-scripts.jpg",
+        "image-alt": "screenshot of ArcGIS Online landing page",
+        "url": "https://github.com/pmacMaps/ago-admin-scripts",
+        "teaser": "Various python scripts that assist with administering ArcGIS Online organizations."
     }
 ]
