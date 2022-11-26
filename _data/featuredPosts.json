@@ -1,26 +1,26 @@
 [
     {
+        "title": "Using ArcPy Search Cursors to Perform Spatial Analysis",
+        "date": "January 25, 2019",
+        "url": "https://pnmcartodesign.wordpress.com/2019/01/25/using-arcpy-search-cursors-to-perform-spatial-analysis-by-each-record-in-a-jurisdictional-dataset/",
+        "featured-image": "road-closed-flooding.jpg",
+        "featured-image-alt": "river with ice floating on top. a city skyline behind the river",
+        "teaser": "A python script was developed to perform iterative spatial analysis based on a jurisdiction boundary dataset."
+    },
+    {
+        "title": "Displaying Last Modified Date for Esri REST Service",
+        "date": "February 2, 2022",
+        "url": "https://pnmcartodesign.wordpress.com/2022/02/02/displaying-last-modified-date-for-esri-rest-service/",
+        "featured-image": "pexels-pixabay-272976.jpg",
+        "featured-image-alt": "wooden blocks with words 'March' and '8'",
+        "teaser": "You can get details on publicly shared content in ArcGIS Online using the Fetch API, including last modified date."
+    },
+    {
         "title": "How to Add A Legend to the Esri Story Map Tour App",
         "date": "July 23, 2020",
         "url": "https://pnmcartodesign.wordpress.com/2020/07/23/how-to-add-a-legend-to-the-esri-story-map-tour-app/",
         "featured-image": "daniil-silantev-ioywospyc0u-unsplash.jpg",
         "featured-image-alt": "people holding a small map",
-        "teaser": "Using the Esri ArcGIS Javascript API, you can customize the Classic Story Map applications.  In this article, I'll walk you through adding a legend to the Map Tour app."
-    },
-    {
-        "title": "Converting Parcels to Address Points With a Python Script",
-        "date": "August 2, 2017",
-        "url": "https://pnmcartodesign.wordpress.com/2017/08/02/converting-parcels-to-address-points-with-a-python-script/",
-        "featured-image": "fence-wood-fence-wood-limit-48246.jpeg",
-        "featured-image-alt": "wooden fence posts",
-        "teaser": "To get around a software license issue with the Esri Feature to Point tool, I developed a Python script that loops through a polygon feature class, and creates a point feature class using the centroid coordinates."
-    },
-    {
-        "title": "Reflections on Building Web Maps With Esri JS API From a Leaflet.js Fanboy",
-        "date": "April 2, 2020",
-        "url": "https://pnmcartodesign.wordpress.com/2020/04/02/reflections-on-building-web-maps-with-esri-js-api-from-a-leaflet-js-fanboy/",
-        "featured-image": "kyle-glenn-iflgwylt2fi-unsplash2.jpg",
-        "featured-image-alt": "a left or right road sign with mountains in the background.",
-        "teaser": "I started creating web map apps with Leaflet.js.  Last year, I finally learned the ArcGIS JavaScript API. I wanted to share a few reflections on working with both platforms. I believe both have a place for developers."
+        "teaser": "A guide on adding a legend to the Esri Classic StoryMap application, using the ArcGIS JavaScript API."
     }
 ]
