@@ -71,7 +71,7 @@ body.pf-single .pf-link {
 }
 
 img {
-  object-fit: cover;
+  object-fit: contain;
 }
 
 section {
@@ -285,6 +285,8 @@ body.portfolio footer hr {
 
 .feat-posts div.card-body img {
   margin-bottom: 15px;
+  width: 258px;
+  height: 120px;
 }
 
 .feat-posts div.card-body h3,
@@ -312,7 +314,7 @@ body.portfolio footer hr {
 
 .feat-portfolio .card,
 .feat-posts .card {
-  min-height: 600px;
+  min-height: 525px;
 }
 
 .feat-portfolio .card,
