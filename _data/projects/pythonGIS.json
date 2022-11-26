@@ -4,20 +4,20 @@
         "image": "python-script-template-diagram.png",
         "image-alt": "sketch diagram of the automated data update base script for Cumberland County",
         "url": "/portfolio/product/automating-data-updates",
-        "teaser": "Various python scripts have been developed using the Esri ArcPy Python library to automate data update processes using Windows Scheduled Tasks."
+        "teaser": "Python scripts created to automate data update processes using Windows Scheduled Tasks."
     },
     {
         "title": "SARA Report Tool",
         "image": "dirty-industry-stack-factory-github.jpg",
         "image-alt": "factory with smokestacks",
         "url": "/portfolio/product/sara-report-tool",
-        "teaser": "The SARA Report Tool is a custom ArcGIS tool developed to assist Cumberland County Public Safety with the reporting for hazardous chemical facilties."
+        "teaser": "Custom geoprocessing tool built to assist in reporting for hazardous chemical facilties."
     },
     {
         "title": "SCTF Regional Updates",
         "image": "sctf-regionalupdate-processdiagram.png",
         "image-alt": "sketch diagram of the South Central Task Force regional update scripts",
         "url": "/portfolio/product/sctf-regional-updates",
-        "teaser": "Various python scripts have been developed to help automate the regional GIS data update process for the South Central PA Task Force."
+        "teaser": "Collaborative script development to improve regional data update process for the South Central PA Task Force."
     }
 ]

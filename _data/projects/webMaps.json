@@ -11,13 +11,13 @@
         "image": "yellow-breeches-map-tour-screenshot.PNG",
         "image-alt": "screen shot of a web map app",
         "url": "/portfolio/product/yellow-breeches-map-tour",
-        "teaser": "An Esri Classic Story Map Tour app that has been enhanced using custom JavaScript.  Enhancements include a toggable map legend and adding alt text attributes to all images."
+        "teaser": "Enhancements to the Esri Classic StoryMap include a map legend and alt text attributes."
     },
     {
         "title": "Find Nearby Pennsylvania Parks",
         "image": "find-pa-parks-screenshot.PNG",
         "image-alt": "screen shot of a web map app",
         "url": "/portfolio/product/find-pa-parks",
-        "teaser": "An app that locates Pennsylvania local parks near the user's current location.  Built with Leaflet.js, ArcGIS Rest JS, Parcel.js, and the Geolocation API."
+        "teaser": "An app that locates Pennsylvania local parks near the user's current location."
     }
 ]

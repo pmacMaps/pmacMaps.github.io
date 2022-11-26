@@ -4,13 +4,13 @@
         "image": "pamagic-website-screenshot.png",
         "image-alt": "screen shot of the website www.pamagic.org",
         "url": "/portfolio/product/keystone-gis",
-        "teaser": "I led a team in rebuilding the organization's website on the Drupal CMS platform.  Later, I led switching to the Wild Apricot platform.  I continue to serve on the Technology Committee."
+        "teaser": "Manged website on Drupal.  Transitioned site to Wild Apricot platform."
     },
     {
         "title": "Local Weather Forecast",
         "image": "get-forecast-screenshot.PNG",
         "image-alt": "screen shot of website that displays local weather forecast",
         "url": "/portfolio/product/local-weather",
-        "teaser": "A website that displays the weather forecast based on the user's current location.  Forecast data is requested from the National Weather Service API."
+        "teaser": "Site displays the weather forecast based on the user's current location."
     }
 ]
